@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
-  // navigate to the demo nopCommerce digital downloads page
+  // navigate to the demo nopCommerce digital downloads page    //comment2be deleted
 
   await page.goto('https://demo.nopcommerce.com/digital-downloads');
 
