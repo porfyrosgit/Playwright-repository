@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { time } from 'console';
 
 test('test', async ({ page }) => {
   // navigate to the demo nopCommerce digital downloads page    //comment2be deleted
@@ -9,6 +10,7 @@ test('test', async ({ page }) => {
   await expect(logo).toBeVisible;
 
   const Searchstore: Locator = page.getByLabel('Search store'); 
+  await timeout(3000);
   await expect(Searchstore).toBeVisible();
   await Searchstore.fill('iphone 16');
 
