@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    // Target modern JavaScript features
+    "target": "ES2020",
+    
+    // Use CommonJS or NodeNext for module system
+    "module": "CommonJS", 
+    
+    // Set module resolution to standard Node.js logic
+    "moduleResolution": "node", 
+    
+    // Enable interoperability between CommonJS and ES Modules
+    "esModuleInterop": true,
+    
+    // Enforce consistent use of casing in file names
+    "forceConsistentCasingInFileNames": true,
+    
+    // Enable all strict type-checking options
+    "strict": true,
+    
+    // Skip checking declaration files for better performance
+    "skipLibCheck": true,
+    
+    // Do not emit compiled JavaScript files, as Playwright handles compilation internally
+    "noEmit": true, 
+    
+    // *** Critical for resolving local .ts imports ***
+    // This setting helps the compiler find modules imported with their extension.
+    "resolveJsonModule": true
+  },
+  
+  // *** FIXED LOCATION: 'include' is a top-level property ***
+  // This tells the TypeScript compiler which files to look for and include in the project context.
+  "include": [
+    "./tests/**/*.ts",
+    "./playwright.config.ts"
+  ]
+}

@@ -43,12 +43,13 @@ export default defineConfig({
       name: 'chromium',
       use: { 
         // 1. Set viewport to null to disable Playwright's fixed size
-        viewport: null, 
+        //viewport: null, 
         
         // 2. Pass the OS-level maximization flag
-        launchOptions: {
-          args: ['--start-maximized'],
-        },
+        //launchOptions: {
+          //args: ['--start-maximized'],
+        //},
+        ...devices['Desktop Chrome'],
       },
     },
     //{
