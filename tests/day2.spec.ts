@@ -8,7 +8,7 @@ test('test', async ({ page }) => {
   const logo:Locator=page.getByAltText('nopCommerce demo store');
   await expect(logo).toBeVisible;
 
-  const Searchstore: Locator = page.locator('#search-box'); 
+  const Searchstore: Locator = page.getByLabel('Search store'); 
   await expect(Searchstore).toBeVisible();
   await Searchstore.fill('iphone 16');
 
@@ -25,14 +25,6 @@ test('test', async ({ page }) => {
   await page.waitForTimeout(5000);
 
 });
-
-
-
-
-
-
-
-
 
 
 
