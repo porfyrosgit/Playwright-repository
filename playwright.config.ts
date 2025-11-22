@@ -22,7 +22,15 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [['html']],
+  reporter: [['list'], // Keeps the console output clean
+    [
+      'allure-playwright',
+      {
+        outputFolder: 'allure-results', 
+        suiteTitle: true,
+      },
+    ],
+  ],
 
   // IMPORTANT: Ensure the output directory for test results is cleared
   // This prevents merging results from previous runs.
