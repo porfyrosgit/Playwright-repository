@@ -1,1 +1,1 @@
-{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[]}
+{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[{"name":"demoblaze site tests","uid":"12523ad38a0549b9","parentUid":"b1a8273437954620fa374b796ffaacdd","status":"passed","time":{"start":1763852861845,"stop":1763852868907,"duration":7062},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["chromium"],"tags":[]}]}

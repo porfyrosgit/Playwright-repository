@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7062","demoblaze site tests","chromium","2025-11-23","passed","2025-11-23","","demoblaze.spec.ts","",""
