@@ -22,7 +22,23 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ['list'], // Keep the standard console output
+    [
+      'allure-playwright', 
+      {
+        outputFolder: '../allure-results', // This is the folder Allure Commandline looks for
+        suiteTitle: true,
+      },
+    ],
+  ],
+
+  // IMPORTANT: Ensure the output directory for test results is cleared
+  // This prevents merging results from previous runs.
+  outputDir: 'test-results',
+  fullyParallel: true,
+
+  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -43,12 +59,13 @@ export default defineConfig({
       name: 'chromium',
       use: { 
         // 1. Set viewport to null to disable Playwright's fixed size
-        viewport: null, 
+        //viewport: null, 
         
         // 2. Pass the OS-level maximization flag
-        launchOptions: {
-          args: ['--start-maximized'],
-        },
+        //launchOptions: {
+          //args: ['--start-maximized'],
+        //},
+        ...devices['Desktop Chrome'],
       },
     },
     //{
