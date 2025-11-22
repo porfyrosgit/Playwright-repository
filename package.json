@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pretest": "npm install",
-    "test": "npx playwright test",
-  }
+    "test": "npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
