@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretest": "npm install",
     "test": "npx playwright test"
   },
   "keywords": [],
