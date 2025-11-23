@@ -4,7 +4,7 @@ import {test,expect} from '@playwright/test';
 import {login_demoblaze} from './demoblaze_login_class.js';
 
 
-test('demoblaze site tests',async({page})=>{
+test('demoblaze site tests',{tag:['@master']},async({page})=>{
 
     //navigate to demoblaze site
     await page.goto('https://demoblaze.com/index.html');
