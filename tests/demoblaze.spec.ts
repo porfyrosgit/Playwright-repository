@@ -11,12 +11,12 @@ test('demoblaze site tests',{tag:['@master']},async({page})=>{
    
 const userlogin1=new login_demoblaze(page);
 
-userlogin1.username='samfischer';
-userlogin1.password='splintercell';
+var username='samfischer';
+var password='splintercell';
 
-const loggedinuser=await userlogin1.login(userlogin1.username,userlogin1.password);
+const loggedinuser=await userlogin1.login(username,password);
 
-await expect(loggedinuser).toEqual(`Welcome ${userlogin1.username}`);
+await expect(loggedinuser).toEqual(`Welcome ${username}`);
 
 
 })
