@@ -3,9 +3,7 @@ export class login_demoblaze{
     private readonly page:Page;
     private readonly loginbutton:locator;
     private readonly usernamefield:locator;
-    private readonly username:string;
     private readonly passwordfield:locator;
-    private readonly password:string;
     private readonly dialoglogin:locator;
     private readonly usergreetingtext:locator;
 
@@ -22,7 +20,7 @@ export class login_demoblaze{
 
     }
 
-    async login(username,password):Promise<string>{
+    async login(username:string,password:string):Promise<string>{
     
         await this.loginbutton.click();
         await this.usernamefield.waitFor({state:'visible'});             //username field visible
