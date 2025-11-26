@@ -1,4 +1,6 @@
 
+import{Page,Locator} from '@playwright/test';
+
 export class login_demoblaze{
     private readonly page:Page;
     private readonly loginbutton:locator;
@@ -8,7 +10,7 @@ export class login_demoblaze{
     private readonly usergreetingtext:locator;
 
 
-    constructor(page){
+    constructor(page: Page){
         this.page=page;
         this.loginbutton=page.locator('#login2');
         this.usernamefield=page.locator('#loginusername');
