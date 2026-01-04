@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 
 
-import {login_demoblaze} from './demoblaze_login_class.js';
+import {login_demoblaze} from './demoblaze.login.POclass.js';
 
 
 test('demoblaze site tests',{tag:['@master']},async({page})=>{
