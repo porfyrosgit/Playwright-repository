@@ -17,11 +17,9 @@ console.log("DBG cleaned multitxt length made it inside = ",length);
 await page.waitForTimeout(2000); //DBG wait 2secs just to see the action performed
 
     
-//assertion : there is now an items count visible on the page and the number is correct
+//assertion : there is now an items count visible on the page and the number is correct !
 await expect (pageobject.page.getByTestId('todo-count')).toBeVisible();
 await expect (pageobject.page.getByTestId('todo-count')).toHaveText(new RegExp(`\\b${length}\\b`));
-
-
 
 
 })
