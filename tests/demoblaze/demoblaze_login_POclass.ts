@@ -2,7 +2,7 @@
 import{Page,Locator,expect} from '@playwright/test';
 
 
-export class login_demoblaze2{
+export class login_demoblaze{
     private readonly page:Page;
     private readonly loginlink:Locator;
     private readonly user_field:Locator;

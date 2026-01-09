@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
-import {login_demoblaze2} from './demoblaze.login.expectingDatasetJson.POclass.ts'; 
-import data from "./data/login_creds_dataset.json";
+import {login_demoblaze} from './demoblaze_login_POclass.ts'; 
+import data from "../login_creds_dataset.json";
 
 // console.log("DBG complete json...\n",data);
 let TestNo=1;
@@ -18,7 +18,7 @@ const validity=user.validity;
 test(`IAT-${currentID} run test with external dataset`,async({page})=>{      //loop iteration runs test with a data triplet
 console.log(`dbg IAT-${currentID} testing json username: ${username} json password: ${password} with validity: ${validity}\n`);
 
-const login_user=new login_demoblaze2(page);  
+const login_user=new login_demoblaze(page);  
    //instantiating the imported class with new object login_user
 await page.goto('https://www.demoblaze.com/');  
 await login_user.login(username,password)
