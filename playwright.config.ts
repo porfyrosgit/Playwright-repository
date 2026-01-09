@@ -36,7 +36,6 @@ export default defineConfig({
   // IMPORTANT: Ensure the output directory for test results is cleared
   // This prevents merging results from previous runs.
   outputDir: 'test-results',
-  fullyParallel: true,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -50,6 +49,11 @@ export default defineConfig({
         
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+   /* This allows to see a 'video-like' 
+       replay of the failure in the HTML report. */
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
+
   },
 
 /* Configure projects for major browsers */
