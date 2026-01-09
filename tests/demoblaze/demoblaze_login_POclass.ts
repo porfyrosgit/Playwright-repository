@@ -32,7 +32,6 @@ async login(username:string,password:string):Promise<void>   //TODO: what kind o
   await this.user_field.fill(username);
   await this.pass_field.fill(password);
   await this.loginbutton.click();
-  await this.welcome_text.waitFor({state:'visible'});
 
   
 //   await this.welcome_text  //TODO: Not sure how i will validate the expected username there
