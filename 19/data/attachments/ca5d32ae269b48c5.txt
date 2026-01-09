@@ -1,0 +1,6 @@
+DBG clean_multitxt= [
+  'write POM class',
+  'write test case1',
+  'write test case2',
+  'import POM class in test cases'
+]
