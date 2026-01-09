@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Infrastructure / Timeout Issues",
+    "matchedStatuses": ["broken", "failed"],
+    "traceRegex": ".*timeout.*"
+  },
+  {
+    "name": "UI Assertion Failures",
+    "matchedStatuses": ["failed"],
+    "traceRegex": ".*expect.*"
+  }
+]
