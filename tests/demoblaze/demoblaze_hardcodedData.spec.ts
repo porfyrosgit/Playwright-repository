@@ -12,7 +12,7 @@ test('demoblaze site tests',{tag:['@master']},async({page})=>{
 let username='samfischer';
 let password='splintercell';
    
-const userlogin1=new login_demoblaze(page);  //instantiating the class with new object userlogin1
+const userlogin1=new login_demoblaze(page);  // instantiating the class with new object userlogin1
 
 await userlogin1.login(username,password); //calling login method on the imported class object userlogin1
 
