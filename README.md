@@ -3,7 +3,7 @@
 This repository showcases end-to-end testing practices using Playwright and TypeScript. 
 I use this project to practice website UI automation and apply solid test framework practices (DRY , SOC)
 
-Guide of subfolders inside test :
+Inside tests folder :
 
 -DemoBlaze test folder: Focuses on login, looping over credentials of users in JSON external data, handling Browser native Dialogs and performing assertions depending on validity of login credentials.
 
