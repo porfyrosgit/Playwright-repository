@@ -1,3 +1,7 @@
+
+[![Playwright Tests](https://github.com/porfyrosgit/Playwright-repository/actions/workflows/playwright.yml/badge.svg)](https://github.com/porfyrosgit/Playwright-repository/actions)
+
+
 🎭 Playwright Automation Framework.
 
 This repository showcases end-to-end test automation using Playwright and TypeScript. 
