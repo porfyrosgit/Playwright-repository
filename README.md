@@ -1,11 +1,12 @@
 🎭 Playwright Automation Framework.
 
-This repository showcases end-to-end testing practices using Playwright and TypeScript. 
-I use this project to practice website UI automation and apply solid test framework practices (DRY , SOC)
+This repository showcases end-to-end test automation using Playwright and TypeScript. 
+>solid test framework practices (DRY , SOC)
+>dynamically generated test ID in executed test methods, for potential integration with Xray test executions
 
 Inside tests folder :
 
--DemoBlaze : Focuses on login, looping over credentials of users in JSON external data, handling Browser native Dialogs and performing assertions depending on validity of login credentials.
+-DemoBlaze : Focuses on login, looping over credentials of users from JSON external data, handling Browser native Dialogs and performing assertions depending on validity of login credentials.
 
 -todomvc : Focuses on locating UI elements and performing assertions.
 
