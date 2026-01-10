@@ -1,4 +1,5 @@
-🎭 Playwright Automation Framework
+🎭 Playwright Automation Framework.
+
 This repository showcases end-to-end testing practices using Playwright and TypeScript. 
 I use this project to practice website UI automation and apply solid test framework practices (DRY , SOC)
 
