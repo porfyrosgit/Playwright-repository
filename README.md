@@ -1,6 +1,10 @@
 🎭 Playwright Automation Framework
-This repository serves as a portfolio showcasing end-to-end (E2E) testing practices using Playwright and TypeScript. 
-I use this project to practice automation patterns, locating website elements and performing assertions.
+This repository showcases end-to-end testing practices using Playwright and TypeScript. 
+I use this project to practice website UI automation and apply solid test framework practices (DRY , SOC)
+
+Folder guide :
+-DemoBlaze test folder: Focuses on login, looping over credentials of users in JSON external data, handling Browser native Dialogs and performing assertions depending on validity of login credentials.
+-todomvc test folder: Focuses on locating UI elements and performing assertions.
 
 🚀 Click Here to View Live Allure Report
  https://porfyrosgit.github.io/Playwright-repository/
@@ -9,21 +13,13 @@ I use this project to practice automation patterns, locating website elements an
 
 🛠️ Tech Stack & Tools
 Engine: Playwright (Chromium/Webkit/Firefox)
-
 Language: TypeScript
-
 Reporting: Allure Report 
 
-CI/CD: GitHub Actions
-
-Pattern: Page Object Model (POM)
-
 🏗️ Framework Features
-CI/CD Integration: Automated test execution on every commit.
-
+CI/CD GitHub Integration: Automated test execution on every push.
+Page Object Model pattern: Lean architecture designed for maintainability and readability.
 Defect Categorization: Custom Allure configuration to differentiate between Product Defects and Automation/Infrastructure Issues.
-
-Page Object Model: Lean architecture designed for maintainability and readability.
 
 ⚙️ Local Execution
 Clone the repo: git clone https://github.com/porfyrosgit/Playwright-repository.git
