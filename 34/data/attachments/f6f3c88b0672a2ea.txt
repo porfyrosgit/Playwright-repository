@@ -1,0 +1,2 @@
+dbg IAT-3 testing json username: specialuser;:&#!@? json password: password123 with validity: invalid
+
