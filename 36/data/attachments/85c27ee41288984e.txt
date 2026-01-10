@@ -1,0 +1,8 @@
+DBG cleaned multitxt= [
+  'write POM class',
+  'write test case1',
+  'write test case2',
+  'import POM class in test cases'
+]
+cleaned multitxt_length = 4
+DBG cleaned multitxt length made it inside =  4
