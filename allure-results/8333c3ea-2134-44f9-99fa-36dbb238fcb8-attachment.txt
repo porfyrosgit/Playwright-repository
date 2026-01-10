@@ -1,1 +1,0 @@
-DBG clean_multitxt= [ 'write_POM_class' ]
