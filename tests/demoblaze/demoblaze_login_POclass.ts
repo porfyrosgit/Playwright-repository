@@ -1,5 +1,5 @@
 
-import{Page,Locator,expect} from '@playwright/test';
+import{Page,type Locator,expect} from '@playwright/test';
 
 
 export class login_demoblaze{
@@ -7,10 +7,9 @@ export class login_demoblaze{
     private readonly loginlink:Locator;
     private readonly user_field:Locator;
     private readonly pass_field:Locator;
-    private readonly loginbutton:Locator;
-    private readonly welcome_text:Locator;
-    public welcome_message:Locator;
-
+    public readonly loginbutton:Locator;     //public to be exposed for use in test file 
+    public readonly welcome_text:Locator;    //public to be exposed for use in test file 
+    
 
 constructor(page:Page){
 this.page=page;
@@ -23,23 +22,15 @@ this.welcome_text=page.locator('#nameofuser');
 this.welcome_message=this.welcome_text;
 }
 
-//TODO: write event listener to listen for pop dialog "user does not exist" (unrelated to html elements)
-
-async login(username:string,password:string):Promise<void>   //TODO: what kind of promise does it return ?
+async login(username:string,password:string):Promise<void>   //Promise<void> : no need for login to return any value
 {
   await this.loginlink.click();
   await this.user_field.waitFor({state:'visible'});
   await this.user_field.fill(username);
   await this.pass_field.fill(password);
-  await this.loginbutton.click();
-
-  
-//   await this.welcome_text  //TODO: Not sure how i will validate the expected username there
-
-this.welcome_message=this.welcome_text;  
+  await this.loginbutton.click() ;
 
 }
-
 
 }
 

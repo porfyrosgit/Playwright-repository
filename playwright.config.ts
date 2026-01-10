@@ -43,6 +43,10 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
+  // launchOptions: {
+  //     slowMo: 5000, // Adds a 5-second delay after every click/type/action
+  //   },
+
 	
 	// Set the viewport (optional, but good practice)
     viewport: { width: 1920, height: 1080 }, 

@@ -1,7 +1,8 @@
 
 [
-    {"username":"samfischer", "password":"splintercell","validity":"valid"},
+    
     {"username":"brucewills", "password":"rambo","validity":"invalid"},
     {"username":"specialuser;:&#!@?", "password":"password123", "validity":"invalid"},
-    {"username":"specialpass", "password":"specials;:&#!@?", "validity":"invalid"} 
+    {"username":"specialpass", "password":"specials;:&#!@?", "validity":"invalid"},
+    {"username":"samfischer", "password":"splintercell","validity":"valid"}
 ]
