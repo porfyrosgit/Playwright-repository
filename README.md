@@ -1,8 +1,9 @@
 🎭 Playwright Automation Framework.
 
 This repository showcases end-to-end test automation using Playwright and TypeScript. 
->solid test framework practices (DRY , SOC)
->dynamically generated test ID in executed test methods, for potential integration with Xray test executions
+>solid test framework practices (DRY , SOC).
+
+>dynamically generated test ID in executed test methods, for potential integration with Xray test executions.
 
 Inside tests folder :
 
