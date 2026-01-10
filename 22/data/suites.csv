@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","95","Remove all todo items from the list","chromium","Sat Jan 10 00:11:42 UTC 2026","passed","Sat Jan 10 00:11:42 UTC 2026","","todomvc/todomvc.REMOVEALLtodoitems.spec.ts","",""
+"","2013","demoblaze site tests","chromium","Sat Jan 10 00:11:35 UTC 2026","passed","Sat Jan 10 00:11:37 UTC 2026","","demoblaze/demoblaze_hardcodedData.spec.ts","",""
+"","1855","IAT-1 run test with external dataset","chromium","Sat Jan 10 00:11:30 UTC 2026","passed","Sat Jan 10 00:11:32 UTC 2026","","demoblaze/demoblaze_getDatasetJson.spec.ts","",""
+"","1060","IAT-3 run test with external dataset","chromium","Sat Jan 10 00:11:33 UTC 2026","passed","Sat Jan 10 00:11:34 UTC 2026","","demoblaze/demoblaze_getDatasetJson.spec.ts","",""
+"","4432","Add todo item in list","chromium","Sat Jan 10 00:11:37 UTC 2026","passed","Sat Jan 10 00:11:42 UTC 2026","","todomvc/todomvc.ADDtodoitem.spec.ts","",""
+"","1017","IAT-4 run test with external dataset","chromium","Sat Jan 10 00:11:34 UTC 2026","passed","Sat Jan 10 00:11:35 UTC 2026","","demoblaze/demoblaze_getDatasetJson.spec.ts","",""
+"","969","IAT-2 run test with external dataset","chromium","Sat Jan 10 00:11:32 UTC 2026","passed","Sat Jan 10 00:11:33 UTC 2026","","demoblaze/demoblaze_getDatasetJson.spec.ts","",""
