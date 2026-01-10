@@ -45,13 +45,14 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test
 
-      - name: Generate Environment Info
+      - name: Generate Environment Info & Categories  #allure report env,categories adjustment
         if: always()
         run: |
-          mkdir -p allure-results
-          echo "Browser=Chromium" > allure-results/environment.properties
-          echo "OS=${{ runner.os }}" >> allure-results/environment.properties
-          echo "Project=Playwright-Repository" >> allure-results/environment.properties
+         mkdir -p allure-results
+         cp categories.json allure-results/
+         echo "Browser=Chromium" > allure-results/environment.properties
+         echo "OS=${{ runner.os }}" >> allure-results/environment.properties
+         echo "Project=Playwright-Repository" >> allure-results/environment.properties
   
       - name: Allure Report Action
         uses: simple-elf/allure-report-action@master
