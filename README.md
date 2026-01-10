@@ -4,6 +4,7 @@ I use this project to practice automation patterns, locating website elements an
 
 🚀 Click Here to View Live Allure Report
  https://porfyrosgit.github.io/Playwright-repository/
+ 
 (Note: This report is automatically updated via GitHub Actions on every push.)
 
 🛠️ Tech Stack & Tools
