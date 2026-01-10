@@ -5,6 +5,7 @@ I use this project to practice website UI automation and apply solid test framew
 
 Folder guide :
 -DemoBlaze test folder: Focuses on login, looping over credentials of users in JSON external data, handling Browser native Dialogs and performing assertions depending on validity of login credentials.
+
 -todomvc test folder: Focuses on locating UI elements and performing assertions.
 
 🚀 Click Here to View Live Allure Report
