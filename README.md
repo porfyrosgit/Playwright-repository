@@ -3,7 +3,7 @@
 This repository showcases end-to-end testing practices using Playwright and TypeScript. 
 I use this project to practice website UI automation and apply solid test framework practices (DRY , SOC)
 
-Folder guide :
+Guide of subfolders inside test :
 
 -DemoBlaze test folder: Focuses on login, looping over credentials of users in JSON external data, handling Browser native Dialogs and performing assertions depending on validity of login credentials.
 
@@ -12,7 +12,7 @@ Folder guide :
 🚀 Click Here to View Live Allure Report
  https://porfyrosgit.github.io/Playwright-repository/
  
-(Note: This report is automatically updated via GitHub Actions on every push.)
+(report automatically updated via GitHub Actions on every push.)
 
 🛠️ Tech Stack & Tools
 Engine: Playwright (Chromium/Webkit/Firefox)
