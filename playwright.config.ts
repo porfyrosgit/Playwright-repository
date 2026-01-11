@@ -62,7 +62,8 @@ export default defineConfig({
 
 /* Configure projects for major browsers */
 
-  projects: [
+  projects:process.env.CI? [
+    // GitHub Actions (CI) Browsers
     {
       name: 'chromium',
       use: { 
@@ -74,27 +75,25 @@ export default defineConfig({
           //args: ['--start-maximized'],
         //},
         ...devices['Desktop Chrome'],
-      },
-    },
-    //{
-    //  name: 'firefox',
-    //  use: { ...devices['Desktop Firefox'] },
-    //},
-
-    //{
-    //  name: 'webkit',
-    //  use: { ...devices['Desktop Safari'] },
-    //},
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
+      }},
+      {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+      },
+       {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+      },
+      
+     //Test against mobile viewports. 
+     {
+       name: 'Mobile Chrome',
+       use: { ...devices['Pixel 7'] },
+     },
+     {
+       name: 'Mobile Safari',
+       use: { ...devices['iPhone 15'] },
+     },
 
     /* Test against branded browsers. */
     // {
@@ -105,8 +104,11 @@ export default defineConfig({
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
-  ],
-
+  ]
+   :[
+// Local machine Browsers
+   {name:'chromium',use:{ ...devices['Desktop Chrome']}},
+   ],
   /* Run your local dev server before starting the tests */
   // webServer: {
   //   command: 'npm run start',
