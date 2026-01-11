@@ -1,0 +1,4 @@
+
+dbg IAT-3| testing username: specialpass| password: specials;:&#!@?| validity: invalid
+
+DBG popup text :User does not exist.
